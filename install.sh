@@ -12,9 +12,12 @@ mkdir /usr/ifi
 cd /usr/ifi
 
 # download and install other needed dependencies
-curl -k -O -L http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u12_armhf.deb
+# curl -k -O -L http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u12_armhf.deb
+curl -k -O -L http://archive.debian.org/debian-archive/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u12_armhf.deb
 apt install -y ./libssl1.0.0_1.0.1t-1+deb8u12_armhf.deb
-curl -k -O -L http://security.debian.org/debian-security/pool/updates/main/c/curl/libcurl3_7.38.0-4+deb8u16_armhf.deb
+
+# curl -k -O -L http://security.debian.org/debian-security/pool/updates/main/c/curl/libcurl3_7.38.0-4+deb8u16_armhf.deb
+curl -k -O -L http://archive.debian.org/debian-security/pool/updates/main/c/curl/libcurl3_7.38.0-4+deb8u16_armhf.deb
 apt install -y ./libcurl3_7.38.0-4+deb8u16_armhf.deb
 
 # clone git repo
