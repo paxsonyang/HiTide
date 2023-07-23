@@ -18,7 +18,7 @@ curl -k -O -L http://security.debian.org/debian-security/pool/updates/main/c/cur
 apt install -y ./libcurl3_7.38.0-4+deb8u16_armhf.deb
 
 # clone git repo
-git clone https://github.com/shawaj/ifi-tidal-release
+git clone https://github.com/paxsonyang/ifi-tidal-release
 
 # correct permissions
 chmod +x /usr/ifi/ifi-tidal-release/play
